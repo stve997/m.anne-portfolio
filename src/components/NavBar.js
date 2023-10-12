@@ -8,6 +8,7 @@ import { HashLink } from 'react-router-hash-link';
 import {
   BrowserRouter as Router
 } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 export const NavBar = () => {
 
@@ -33,10 +34,9 @@ export const NavBar = () => {
   }
 
   return (
-    <Router>
       <Navbar expand="md" className={scrolled ? "scrolled" : ""}>
         <Container>
-          <Navbar.Brand href="/">
+          <Navbar.Brand as={Link} to='/'>
             <img src={logo} alt="Logo" style={{ width: '50px', height: '67px'}} />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav">
@@ -44,22 +44,20 @@ export const NavBar = () => {
           </Navbar.Toggle>
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto">
-              <Nav.Link href="#home" className={activeLink === 'home' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('home')}>Home</Nav.Link>
-              <Nav.Link href="#skills" className={activeLink === 'skills' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('skills')}>Skills</Nav.Link>
-              <Nav.Link href="#projects" className={activeLink === 'projects' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('projects')}>Projects</Nav.Link>
+              <Nav.Link as={Link} to='/' className={activeLink === 'home' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('home')}>Home</Nav.Link>
+              <Nav.Link as={Link} to='/projects' className={activeLink === 'projects' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('projects')}>Projects</Nav.Link>
             </Nav>
             <span className="navbar-text">
               <div className="social-icon">
                 <a href="https://www.linkedin.com/in/maryanne-mwangi-59779a19a/"><img src={navIcon1} alt="" /></a>
                 <a href="https://instagram.com/m_.m_designs_?igshid=NzZIODBkYWE4Ng=="><img src={navIcon3} alt="" /></a>
               </div>
-              <HashLink to='#connect'>
+              <HashLink to='/contact'>
                 <button className="vvd"><span>Let’s Connect</span></button>
               </HashLink>
             </span>
           </Navbar.Collapse>
         </Container>
       </Navbar>
-    </Router>
   )
 }

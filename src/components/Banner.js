@@ -4,6 +4,7 @@ import headerImg from "../assets/img/header-img.svg";
 import { ArrowRightCircle } from 'react-bootstrap-icons';
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
+import { Skills } from "./Skills";
 
 export const Banner = () => {
   const [loopNum, setLoopNum] = useState(0);
@@ -11,7 +12,7 @@ export const Banner = () => {
   const [text, setText] = useState('');
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   const [index, setIndex] = useState(1);
-  const toRotate = [ "Graphic Designer", "UI/UX Designer" ];
+  const toRotate = [ "Graphic Designer" ];
   const period = 2000;
 
   useEffect(() => {
@@ -48,6 +49,7 @@ export const Banner = () => {
   }
 
   return (
+    <>
     <section className="banner" id="home">
       <Container>
         <Row className="aligh-items-center">
@@ -56,7 +58,7 @@ export const Banner = () => {
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                 <span className="tagline">Welcome to my Portfolio</span>
-                <h1>{`Hi! I'm Mary-Anne`} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Graphic Designer", "UI/UX Designer" ]'><span className="wrap">{text}</span></span></h1>
+                <h1>{`Hi! I'm Mary Anne`} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Graphic Designer" ]'><span className="wrap">{text}</span></span></h1>
                   <p> I am a public relations professional with a passion for graphic design. Here, you'll discover a curated collection of my work. Throughout my career, I've had the privilege of working on a diverse range of projects, each driven by a commitment to excellence and a dedication to effective communication.</p>
                   <button onClick={() => console.log('connect')}>Let’s Connect <ArrowRightCircle size={25} /></button>
               </div>}
@@ -73,5 +75,7 @@ export const Banner = () => {
         </Row>
       </Container>
     </section>
+    <Skills />
+    </>
   )
 }
