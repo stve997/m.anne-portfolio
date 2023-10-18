@@ -5,6 +5,7 @@ import { ArrowRightCircle } from 'react-bootstrap-icons';
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 import { Skills } from "./Skills";
+import { motion } from "framer-motion";
 
 export const Banner = () => {
   const [loopNum, setLoopNum] = useState(0);
@@ -49,33 +50,38 @@ export const Banner = () => {
   }
 
   return (
-    <>
-    <section className="banner" id="home">
-      <Container>
-        <Row className="aligh-items-center">
-          <Col xs={12} md={6} xl={7}>
-            <TrackVisibility>
-              {({ isVisible }) =>
-              <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
-                <span className="tagline">Welcome to my Portfolio</span>
-                <h1>{`Hi! I'm Mary Anne`} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Graphic Designer" ]'><span className="wrap">{text}</span></span></h1>
-                  <p> I am a public relations professional with a passion for graphic design. Here, you'll discover a curated collection of my work. Throughout my career, I've had the privilege of working on a diverse range of projects, each driven by a commitment to excellence and a dedication to effective communication.</p>
-                  <button onClick={() => console.log('connect')}>Let’s Connect <ArrowRightCircle size={25} /></button>
-              </div>}
-            </TrackVisibility>
-          </Col>
-          <Col xs={12} md={6} xl={5}>
-            <TrackVisibility>
-              {({ isVisible }) =>
-                <div className={isVisible ? "animate__animated animate__zoomIn" : ""}>
-                  {/* <img src={headerImg} alt="Header Img"/> */}
+    <motion.div
+      initial= {{opacity: 0}}
+      animate= {{opacity: 1}}
+      exit= {{opacity: 0}}
+      transition= {{duration: 1}}
+    >
+      <section className="banner" id="home">
+        <Container>
+          <Row className="aligh-items-center">
+            <Col xs={12} md={6} xl={7}>
+              <TrackVisibility>
+                {({ isVisible }) =>
+                <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
+                  <span className="tagline">Welcome to my Portfolio</span>
+                  <h1>{`Hi! I'm Mary Anne`} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Graphic Designer" ]'><span className="wrap">{text}</span></span></h1>
+                    <p> I am a public relations professional with a passion for graphic design. Here, you'll discover a curated collection of my work. Throughout my career, I've had the privilege of working on a diverse range of projects, each driven by a commitment to excellence and a dedication to effective communication.</p>
+                    <button onClick={() => console.log('connect')}>Let’s Connect <ArrowRightCircle size={25} /></button>
                 </div>}
-            </TrackVisibility>
-          </Col>
-        </Row>
-      </Container>
-    </section>
-    <Skills />
-    </>
+              </TrackVisibility>
+            </Col>
+            <Col xs={12} md={6} xl={5}>
+              <TrackVisibility>
+                {({ isVisible }) =>
+                  <div className={isVisible ? "animate__animated animate__zoomIn" : ""}>
+                    {/* <img src={headerImg} alt="Header Img"/> */}
+                  </div>}
+              </TrackVisibility>
+            </Col>
+          </Row>
+        </Container>
+      </section>
+      <Skills />
+    </motion.div>
   )
 }

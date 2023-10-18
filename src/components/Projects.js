@@ -17,10 +17,11 @@ import cover2 from '../assets/magazine/covver2.jpg';
 import cover3 from '../assets/magazine/cover3.png';
 import cover4 from '../assets/magazine/cover4.png';
 import cover5 from '../assets/magazine/cover5.png';
-
+import transition from '../transition.js'
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
+import { motion } from "framer-motion";
 
 export const Projects = () => {
 
@@ -94,17 +95,7 @@ export const Projects = () => {
     {
       title: "Magazine cover",
       description: "Design & Development",
-      imgUrl: cover1,
-    },
-    {
-      title: "Magazine cover",
-      description: "Design & Development",
-      imgUrl: cover2,
-    },
-    {
-      title: "Magazine cover",
-      description: "Design & Development",
-      imgUrl: cover3,
+      imgUrl: cover5,
     },
     {
       title: "Magazine cover",
@@ -114,82 +105,106 @@ export const Projects = () => {
     {
       title: "Magazine cover",
       description: "Design & Development",
-      imgUrl: cover5,
+      imgUrl: cover3,
+    },
+    {
+      title: "Magazine cover",
+      description: "Design & Development",
+      imgUrl: cover2,
+    },
+    {
+      title: "Magazine cover",
+      description: "Design & Development",
+      imgUrl: cover1,
     },
   ]
 
   return (
-    <section className="project" id="projects">
-      <Container>
-        <Row>
-          <Col size={12}>
-            <TrackVisibility>
-              {({ isVisible }) =>
-              <div className={isVisible ? "animate__animated animate__fadeIn": ""}>
-                <h2>Projects</h2>
-                <Tab.Container id="projects-tabs" defaultActiveKey="first">
-                  <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
-                    <Nav.Item>
-                      <Nav.Link eventKey="first">Posters</Nav.Link>
-                    </Nav.Item>
-                    <Nav.Item>
-                      <Nav.Link eventKey="second">Logos</Nav.Link>
-                    </Nav.Item>
-                    <Nav.Item>
-                      <Nav.Link eventKey="third">Magazine</Nav.Link>
-                    </Nav.Item>
-                  </Nav>
-                  <Tab.Content id="slideInUp" className={isVisible ? "animate__animated animate__slideInUp" : ""}>
-                    <Tab.Pane eventKey="first">
-                      <Row>
-                        {
-                          projects.map((project, index) => {
-                            return (
-                              <ProjectCard
-                                key={index}
-                                {...project}
-                                />
-                            )
-                          })
-                        }
-                      </Row>
-                    </Tab.Pane>
-                    <Tab.Pane eventKey="second">
-                      <Row>
-                        {
-                          projects1.map((projects1, index) => {
-                            return (
-                              <ProjectCard
-                                key={index}
-                                {...projects1}
-                                />
-                            )
-                          })
-                        }
-                      </Row>
-                    </Tab.Pane>
-                    <Tab.Pane eventKey="third">
-                      <Row>
-                        {
-                          magazine.map((magazine, index) => {
-                            return (
-                              <ProjectCard
-                                key={index}
-                                {...magazine}
-                                />
-                            )
-                          })
-                        }
-                      </Row>
-                    </Tab.Pane>
-                  </Tab.Content>
-                </Tab.Container>
-              </div>}
-            </TrackVisibility>
-          </Col>
-        </Row>
-      </Container>
-      <img className="background-image-right" src={colorSharp2}></img>
-    </section>
+    <motion.div
+    //   initial= {{opacity: 0}}
+    //   animate= {{opacity: 1}}
+    //   exit= {{opacity: 0}}
+    //   transition= {{duration: 1}}
+          initial={{ scale: 0}}
+          animate={{ scale: 1 }}
+          exit={{ opacity: 0}}
+          transition={{ duration: 1, type: "spring", stiffness: 80 }}
+    >
+      <section className="project" id="projects">
+        <Container>
+          <Row>
+            <Col size={12}>
+              <TrackVisibility>
+                {({ isVisible }) =>
+                <div className={isVisible ? "animate__animated animate__fadeIn": ""}>
+                  <h2>Projects</h2>
+                  <Tab.Container id="projects-tabs" defaultActiveKey="first">
+                    <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
+                      <Nav.Item>
+                        <Nav.Link eventKey="first">Posters</Nav.Link>
+                      </Nav.Item>
+                      <Nav.Item>
+                        <Nav.Link eventKey="second">Logos</Nav.Link>
+                      </Nav.Item>
+                      <Nav.Item>
+                        <Nav.Link eventKey="third">Magazine</Nav.Link>
+                      </Nav.Item>
+                    </Nav>
+                    <Tab.Content id="slideInUp" className={isVisible ? "animate__animated animate__slideInUp" : ""}>
+                      <Tab.Pane eventKey="first">
+                        <Row>
+                          {
+                            projects.map((project, index) => {
+                              return (
+                                <ProjectCard
+                                  key={index}
+                                  {...project}
+                                  />
+                              )
+                            })
+                          }
+                        </Row>
+                      </Tab.Pane>
+                      <Tab.Pane eventKey="second">
+                        <Row>
+                          {
+                            projects1.map((projects1, index) => {
+                              return (
+                                <ProjectCard
+                                  key={index}
+                                  {...projects1}
+                                  />
+                              )
+                            })
+                          }
+                        </Row>
+                      </Tab.Pane>
+                      <Tab.Pane eventKey="third">
+                        <Row>
+                          {
+                            magazine.map((magazine, index) => {
+                              return (
+                                <ProjectCard
+                                  key={index}
+                                  {...magazine}
+                                  />
+                              )
+                            })
+                          }
+                        </Row>
+                      </Tab.Pane>
+                    </Tab.Content>
+                  </Tab.Container>
+                </div>}
+              </TrackVisibility>
+            </Col>
+          </Row>
+        </Container>
+        <img className="background-image-right" src={colorSharp2}></img>
+      </section>
+    </motion.div>
   )
 }
+
+export const ProjectsWithTransition = transition(Projects);
+

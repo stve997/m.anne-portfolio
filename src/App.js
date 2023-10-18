@@ -7,9 +7,14 @@ import { Skills } from "./components/Skills";
 import { Projects } from "./components/Projects";
 import { Contact } from "./components/Contact";
 import { Footer } from "./components/Footer";
-import { Route, Router, Routes } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
+import { AnimatePresence } from 'framer-motion';
+import { useLocation } from 'react-router-dom';
+
 
 function App() {
+  const location = useLocation();
+
   return (
     // <div className="App">
     //   <NavBar />
@@ -19,13 +24,15 @@ function App() {
     //   <Footer />
     // </div>
     <>
-    <Routes>
-      <Route path='/' element={<Banner />} />
-        <Route index element={<Banner />} />
-        <Route path='projects' element={<Projects />} />
-        <Route path='contact' element={<Contact />} />
-    </Routes>
-    <NavBar />
+      <NavBar />
+      <AnimatePresence mode='wait'>
+        <Routes location={location} key={location.pathname}>
+          <Route path='/' element={<Banner />} />
+            <Route index element={<Banner />} />
+            <Route path='projects' element={<Projects />} />
+            <Route path='contact' element={<Contact />} />
+        </Routes>
+      </AnimatePresence>
     <Footer />
     </>
   );
