@@ -3,7 +3,6 @@ import { Container, Row, Col } from "react-bootstrap";
 import contactImg from "../assets/img/contact-img.svg";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
-import transition from "../transition.js";
 import { motion } from "framer-motion";
 
 
@@ -126,4 +125,3 @@ export const Contact = () => {
   )
 }
 
-export const ContactWithTransition = transition(Contact);

@@ -17,7 +17,6 @@ import cover2 from '../assets/magazine/covver2.jpg';
 import cover3 from '../assets/magazine/cover3.png';
 import cover4 from '../assets/magazine/cover4.png';
 import cover5 from '../assets/magazine/cover5.png';
-import transition from '../transition.js'
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
@@ -206,5 +205,4 @@ export const Projects = () => {
   )
 }
 
-export const ProjectsWithTransition = transition(Projects);
 
