@@ -61,17 +61,10 @@ export const Contact = () => {
 
   return (
     <motion.div
-    // initial= {{opacity: 0, backgroundColor: 'orange'}}
-    // animate= {{opacity: 1, background: 'white'}}
-    // exit= {{opacity: 0, background: 'blue'}}
-    // transition= {{duration: 1.5}}
-      // initial={{ scale: 0}}
-      // animate={{ scale: 1 }}
-      // exit={{ opacity: 0}}
-      // transition={{ duration: 1.5, type: "spring", stiffness: 80 }}
-      variants={boxVariants}
-      initial="hidden"
-      animate="visible"
+      initial= {{opacity: 0}}
+      animate= {{opacity: 1}}
+      exit= {{opacity: 0}}
+      transition= {{duration: 1}}
     >
       <section 
       className="contact" id="connect">

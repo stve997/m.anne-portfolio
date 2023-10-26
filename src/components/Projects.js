@@ -6,17 +6,58 @@ import poster3 from '../assets/Projects/thank you.png';
 import poster4 from '../assets/Projects/kereita 1.jpg';
 import poster5 from '../assets/Projects/might1.jpg';
 import poster6 from '../assets/Projects/det11.jpg';
+import poster7 from '../assets/Posters/card4.png';
+import poster8 from '../assets/Posters/cover pg.jpg';
+import poster9 from '../assets/Posters/DIALOGUE 2.jpg';
+import poster10 from '../assets/Posters/dialogue3 (2).jpg';
+import poster11 from '../assets/Posters/Ecard 2.jpg';
+import poster12 from '../assets/Posters/f2.jpg';
+import poster13 from '../assets/Posters/job ad2.jpg';
+import poster14 from '../assets/Posters/job advert.jpg';
+import poster15 from '../assets/Posters/KIDS PROGRAM2.jpg';
+import poster16 from '../assets/Posters/lemon 1.jpg';
+import poster17 from '../assets/Posters/lymas menu.jpg';
+import poster18 from '../assets/Posters/menu doodle.jpg';
+import poster19 from '../assets/Posters/networking meet-up.jpg';
+import poster20 from '../assets/Posters/rott1.jpg';
+import poster21 from '../assets/Posters/sarakasi.jpg';
+import poster22 from '../assets/Posters/sarakasi2.jpg';
+import poster23 from '../assets/Posters/sk video end.jpg';
+import poster24 from '../assets/Posters/trip.png';
+import poster25 from '../assets/Posters/Voting poster.jpg';
+import poster26 from '../assets/Posters/WCC POSTER1.jpg';
+import poster27 from '../assets/Posters/wed4.jpg';
 import logo1 from '../assets/logos/kerry.jpg';
 import logo2 from '../assets/logos/lungu stitchery logo1.jpg';
 import logo3 from '../assets/logos/spenza 2.jpg';
 import logo4 from '../assets/logos/t2.png';
 import logo5 from '../assets/logos/the kraft l3.jpg';
 import logo6 from '../assets/logos/wcc3.jpg';
+import logo7 from '../assets/Logos/BATENG web1.png';
+import logo8 from '../assets/Logos/KINEX3.jpg';
+import logo9 from '../assets/Logos/ND.jpg';
+import logo10 from '../assets/Logos/SND1 (2).jpg';
+import logo11 from '../assets/Logos/SND3.jpg';
+import logo12 from '../assets/Logos/Spenza 1.jpg';
+import logo13 from '../assets/Logos/bateng1.jpg';
+import logo14 from '../assets/Logos/ekithroo.jpg';
+import logo15 from '../assets/Logos/ekithroo2.jpg';
+import logo16 from '../assets/Logos/ekithrooF32.jpg';
+import logo17 from '../assets/Logos/logo proj 3.jpg';
+import logo18 from '../assets/Logos/logo project 2.1.jpg';
+import logo19 from '../assets/Logos/mp logo2.png';
+import logo20 from '../assets/Logos/mp3.jpg';
+import logo21 from '../assets/Logos/netic 1w.jpg';
+import logo22 from '../assets/Logos/talanta poster.jpg';
+import logo23 from '../assets/Logos/the kraft logo 3.jpg';
+import logo24 from '../assets/logos/mary-anne-2.jpg';
 import cover1 from '../assets/magazine/IMG-20231009-WA0018.jpg';
 import cover2 from '../assets/magazine/covver2.jpg';
 import cover3 from '../assets/magazine/cover3.png';
 import cover4 from '../assets/magazine/cover4.png';
 import cover5 from '../assets/magazine/cover5.png';
+import cover6 from '../assets/Logos/lux poster.jpg';
+import cover7 from '../assets/Logos/lux poster2.jpg';
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
@@ -27,107 +68,299 @@ export const Projects = () => {
   const projects = [
     {
       title: "Posters",
-      description: "Design & Development",
+      description: "",
       imgUrl: poster1,
     },
     {
       title: "Posters",
-      description: "Design & Development",
+      description: "",
       imgUrl: poster2,
     },
     {
       title: "Posters",
-      description: "Design & Development",
+      description: "",
       imgUrl: poster3,
     },
     {
       title: "Posters",
-      description: "Design & Development",
+      description: "",
       imgUrl: poster4,
     },
     {
       title: "Posters",
-      description: "Design & Development",
+      description: "",
       imgUrl: poster5,
     },
     {
       title: "Posters",
-      description: "Design & Development",
+      description: "",
       imgUrl: poster6,
     },
+    {
+      title: "Posters",
+      description: "",
+      imgUrl: poster7,
+    },
+    {
+      title: "Posters",
+      description: "",
+      imgUrl: poster8,
+    },
+    {
+      title: "Posters",
+      description: "",
+      imgUrl: poster9,
+    },
+    {
+      title: "Posters",
+      description: "",
+      imgUrl: poster10,
+    },
+    {
+      title: "Posters",
+      description: "",
+      imgUrl: poster11,
+    },
+    {
+      title: "Posters",
+      description: "",
+      imgUrl: poster12,
+    },
+    {
+      title: "Posters",
+      description: "",
+      imgUrl: poster13,
+    },
+    {
+      title: "Posters",
+      description: "",
+      imgUrl: poster14,
+    },
+    {
+      title: "Posters",
+      description: "",
+      imgUrl: poster15,
+    },
+    {
+      title: "Posters",
+      description: "",
+      imgUrl: poster16,
+    },
+    {
+      title: "Posters",
+      description: "",
+      imgUrl: poster17,
+    },
+    {
+      title: "Posters",
+      description: "",
+      imgUrl: poster18,
+    },
+    {
+      title: "Posters",
+      description: "",
+      imgUrl: poster19,
+    },
+    {
+      title: "Posters",
+      description: "",
+      imgUrl: poster20,
+    },
+    {
+      title: "Posters",
+      description: "",
+      imgUrl: poster21,
+    },
+    {
+      title: "Posters",
+      description: "",
+      imgUrl: poster22,
+    },
+    {
+      title: "Posters",
+      description: "",
+      imgUrl: poster23,
+    },
+    {
+      title: "Posters",
+      description: "",
+      imgUrl: poster24,
+    },
+    {
+      title: "Posters",
+      description: "",
+      imgUrl: poster25,
+    },
+    {
+      title: "Posters",
+      description: "",
+      imgUrl: poster26,
+    },
+    {
+      title: "Posters",
+      description: "",
+      imgUrl: poster27,
+    },
+    
   ];
 
   const projects1 = [
     {
       title: "Logo Design",
-      description: "Design & Development",
+      description: "",
       imgUrl: logo1,
     },
     {
       title: "Logo Design",
-      description: "Design & Development",
+      description: "",
       imgUrl: logo2,
     },
     {
       title: "Logo Design",
-      description: "Design & Development",
+      description: "",
       imgUrl: logo3,
     },
     {
       title: "Logo Design",
-      description: "Design & Development",
+      description: "",
       imgUrl: logo4,
     },
     {
       title: "Logo Design",
-      description: "Design & Development",
+      description: "",
       imgUrl: logo5,
     },
     {
       title: "Logo Design",
-      description: "Design & Development",
+      description: "",
       imgUrl: logo6,
+    },
+    {
+      title: "Logo Design",
+      description: "",
+      imgUrl: logo7,
+    },
+    {
+      title: "Logo Design",
+      description: "",
+      imgUrl: logo8,
+    },
+    {
+      title: "Logo Design",
+      description: "",
+      imgUrl: logo9,
+    },
+    {
+      title: "Logo Design",
+      description: "",
+      imgUrl: logo10,
+    },
+    {
+      title: "Logo Design",
+      description: "",
+      imgUrl: logo11,
+    },
+    {
+      title: "Logo Design",
+      description: "",
+      imgUrl: logo12,
+    },
+    {
+      title: "Logo Design",
+      description: "",
+      imgUrl: logo13,
+    },
+    {
+      title: "Logo Design",
+      description: "",
+      imgUrl: logo14,
+    },
+    {
+      title: "Logo Design",
+      description: "",
+      imgUrl: logo15,
+    },
+    {
+      title: "Logo Design",
+      description: "",
+      imgUrl: logo16,
+    },
+    {
+      title: "Logo Design",
+      description: "",
+      imgUrl: logo17,
+    },
+    {
+      title: "Logo Design",
+      description: "",
+      imgUrl: logo18,
+    },
+    {
+      title: "Logo Design",
+      description: "",
+      imgUrl: logo19,
+    },
+    {
+      title: "Logo Design",
+      description: "",
+      imgUrl: logo20,
+    },
+    {
+      title: "Logo Design",
+      description: "",
+      imgUrl: logo21,
+    },
+    {
+      title: "Logo Design",
+      description: "",
+      imgUrl: logo22,
+    },
+    {
+      title: "Logo Design",
+      description: "",
+      imgUrl: logo23,
     },
   ];
 
   const magazine = [
     {
       title: "Magazine cover",
-      description: "Design & Development",
-      imgUrl: cover5,
+      description: "",
+      imgUrl: cover1,
     },
     {
       title: "Magazine cover",
-      description: "Design & Development",
-      imgUrl: cover4,
+      description: "",
+      imgUrl: cover7,
     },
     {
       title: "Magazine cover",
-      description: "Design & Development",
+      description: "",
       imgUrl: cover3,
     },
     {
       title: "Magazine cover",
-      description: "Design & Development",
-      imgUrl: cover2,
+      description: "",
+      imgUrl: cover4,
     },
     {
       title: "Magazine cover",
-      description: "Design & Development",
-      imgUrl: cover1,
+      description: "",
+      imgUrl: cover5,
+    },
+    {
+      title: "Magazine cover",
+      description: "",
+      imgUrl: cover6,
     },
   ]
 
   return (
     <motion.div
-    //   initial= {{opacity: 0}}
-    //   animate= {{opacity: 1}}
-    //   exit= {{opacity: 0}}
-    //   transition= {{duration: 1}}
-          initial={{ scale: 0}}
-          animate={{ scale: 1 }}
-          exit={{ opacity: 0}}
-          transition={{ duration: 1, type: "spring", stiffness: 80 }}
+      initial= {{opacity: 0}}
+      animate= {{opacity: 1}}
+      exit= {{opacity: 0}}
+      transition= {{duration: 1}}
     >
       <section className="project" id="projects">
         <Container>
