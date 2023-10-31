@@ -10,6 +10,7 @@ import { Footer } from "./components/Footer";
 import { Route, Routes } from 'react-router-dom';
 import { AnimatePresence } from 'framer-motion';
 import { useLocation } from 'react-router-dom';
+import SideNav from './components/SideNav';
 
 
 function App() {
@@ -24,7 +25,8 @@ function App() {
     //   <Footer />
     // </div>
     <>
-      <NavBar />
+      {/* <NavBar /> */}
+      <SideNav />
       <AnimatePresence mode='wait'>
         <Routes location={location} key={location.pathname}>
           <Route path='/' element={<Banner />} />
