@@ -378,6 +378,11 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 	font-weight: 700;
   text-align: center;
 }
+@media screen and (max-width: 768px) {
+  .project h2 {
+    font-size: 5vw; /* You can adjust the relative font size as needed */
+  }
+}
 .project p {
   color: #B8B8B8;
   font-size: 18px;
@@ -393,6 +398,11 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   border-radius: 50px;
   background-color: rgb(255 255 255 / 10%);
   overflow: hidden;
+}
+@media screen and (max-width: 768px) {
+  .project .nav.nav-pills {
+    font-size: 4vw; /* You can adjust the relative font size as needed */
+  }
 }
 .project .nav.nav-pills .nav-item {
   width: 33.33333%;
