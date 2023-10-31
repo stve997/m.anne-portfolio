@@ -342,9 +342,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     margin: 14px 0 75px 0;
 }
 @media screen and (max-width: 768px) {
-  .skill h2 {
-    font-size: 5vw; /* You can adjust the relative font size as needed */
-  }
   .skill p {
     font-size: 18px;
   }
