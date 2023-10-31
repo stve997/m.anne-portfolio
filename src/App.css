@@ -346,7 +346,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     font-size: 5vw; /* You can adjust the relative font size as needed */
   }
   .skill p {
-    font-size: 3vw;
+    font-size: 18px;
   }
 }
 .skill-slider {
