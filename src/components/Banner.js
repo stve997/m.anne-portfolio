@@ -6,6 +6,7 @@ import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 import { Skills } from "./Skills";
 import { motion } from "framer-motion";
+import PhotoGallery from "./PhotoGallery";
 
 export const Banner = () => {
   const [loopNum, setLoopNum] = useState(0);
@@ -82,6 +83,7 @@ export const Banner = () => {
         </Container>
       </section>
       <Skills />
+      <PhotoGallery />
     </motion.div>
   )
 }

@@ -99,7 +99,7 @@ export const Projects = () => {
     {
       title: "Posters",
       description: "",
-      imgUrl: poster7,
+      imgUrl: poster26,
     },
     {
       title: "Posters",
@@ -119,7 +119,7 @@ export const Projects = () => {
     {
       title: "Posters",
       description: "",
-      imgUrl: poster11,
+      imgUrl: poster25,
     },
     {
       title: "Posters",
@@ -169,7 +169,7 @@ export const Projects = () => {
     {
       title: "Posters",
       description: "",
-      imgUrl: poster21,
+      imgUrl: poster24,
     },
     {
       title: "Posters",
@@ -179,22 +179,22 @@ export const Projects = () => {
     {
       title: "Posters",
       description: "",
+      imgUrl: poster7,
+    },
+    {
+      title: "Posters",
+      description: "",
+      imgUrl: poster21,
+    },
+    {
+      title: "Posters",
+      description: "",
+      imgUrl: poster11,
+    },
+    {
+      title: "Posters",
+      description: "",
       imgUrl: poster23,
-    },
-    {
-      title: "Posters",
-      description: "",
-      imgUrl: poster24,
-    },
-    {
-      title: "Posters",
-      description: "",
-      imgUrl: poster25,
-    },
-    {
-      title: "Posters",
-      description: "",
-      imgUrl: poster26,
     },
     {
       title: "Posters",
