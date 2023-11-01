@@ -83,7 +83,6 @@ export const Banner = () => {
         </Container>
       </section>
       <Skills />
-      <PhotoGallery />
     </motion.div>
   )
 }
