@@ -27,6 +27,8 @@ import poster24 from '../assets/Posters/trip.png';
 import poster25 from '../assets/Posters/Voting poster.jpg';
 import poster26 from '../assets/Posters/WCC POSTER1.jpg';
 import poster27 from '../assets/Posters/wed4.jpg';
+import poster28 from '../assets/Posters/sarakasi-pull.jpg';
+import poster29 from '../assets/Posters/talanta pull up banner.jpg';
 import logo1 from '../assets/logos/kerry.jpg';
 import logo2 from '../assets/logos/lungu stitchery logo1.jpg';
 import logo3 from '../assets/logos/spenza 2.jpg';
@@ -48,9 +50,16 @@ import logo18 from '../assets/Logos/logo project 2.1.jpg';
 import logo19 from '../assets/Logos/mp logo2.png';
 import logo20 from '../assets/Logos/mp3.jpg';
 import logo21 from '../assets/Logos/netic 1w.jpg';
-import logo22 from '../assets/Logos/talanta poster.jpg';
+import logo22 from '../assets/Logos/netic 2.jpg';
 import logo23 from '../assets/Logos/the kraft logo 3.jpg';
-import logo24 from '../assets/logos/mary-anne-2.jpg';
+import logo24 from '../assets/Logos/S1.jpg';
+import logo25 from '../assets/Logos/midnight amar .jpg';
+import logo26 from '../assets/Logos/NT logo11.jpg';
+import logo27 from '../assets/Logos/S2.jpg';
+import logo28 from '../assets/Logos/spenza 2 (2).jpg';
+import logo29 from '../assets/Logos/t1.png';
+import logo30 from '../assets/Logos/t3.png';
+import logo31 from '../assets/Logos/talanta\ 2.15.jpg';
 import cover1 from '../assets/magazine/IMG-20231009-WA0018.jpg';
 import cover2 from '../assets/magazine/covver2.jpg';
 import cover3 from '../assets/magazine/cover3.png';
@@ -74,7 +83,7 @@ export const Projects = () => {
     {
       title: "Posters",
       description: "",
-      imgUrl: poster2,
+      imgUrl: poster16,
     },
     {
       title: "Posters",
@@ -144,7 +153,7 @@ export const Projects = () => {
     {
       title: "Posters",
       description: "",
-      imgUrl: poster16,
+      imgUrl: logo22,
     },
     {
       title: "Posters",
@@ -201,7 +210,16 @@ export const Projects = () => {
       description: "",
       imgUrl: poster27,
     },
-    
+    {
+      title: "Posters",
+      description: "",
+      imgUrl: poster28,
+    },
+    {
+      title: "Posters",
+      description: "",
+      imgUrl: poster29,
+    },
   ];
 
   const projects1 = [
@@ -320,24 +338,49 @@ export const Projects = () => {
       description: "",
       imgUrl: logo23,
     },
+    {
+      title: "Logo Design",
+      description: "",
+      imgUrl: logo24,
+    },
+    {
+      title: "Logo Design",
+      description: "",
+      imgUrl: logo25,
+    },
+    {
+      title: "Logo Design",
+      description: "",
+      imgUrl: logo26,
+    },
+    {
+      title: "Logo Design",
+      description: "",
+      imgUrl: logo27,
+    },
+    {
+      title: "Logo Design",
+      description: "",
+      imgUrl: logo28,
+    },
+    {
+      title: "Logo Design",
+      description: "",
+      imgUrl: logo29,
+    },
+    {
+      title: "Logo Design",
+      description: "",
+      imgUrl: logo30,
+    },
+    {
+      title: "Logo Design",
+      description: "",
+      imgUrl: logo31,
+    },
   ];
 
   const magazine = [
-    {
-      title: "Magazine cover",
-      description: "",
-      imgUrl: cover1,
-    },
-    {
-      title: "Magazine cover",
-      description: "",
-      imgUrl: cover7,
-    },
-    {
-      title: "Magazine cover",
-      description: "",
-      imgUrl: cover3,
-    },
     {
       title: "Magazine cover",
       description: "",
@@ -351,7 +394,22 @@ export const Projects = () => {
     {
       title: "Magazine cover",
       description: "",
+      imgUrl: cover3,
+    },
+    {
+      title: "Magazine cover",
+      description: "",
       imgUrl: cover6,
+    },
+    {
+      title: "Magazine cover",
+      description: "",
+      imgUrl: cover7,
+    },
+    {
+      title: "Magazine cover",
+      description: "",
+      imgUrl: cover1,
     },
   ]
 
@@ -437,5 +495,7 @@ export const Projects = () => {
     </motion.div>
   )
 }
+
+
 
 
