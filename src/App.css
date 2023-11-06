@@ -265,7 +265,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 @media screen and (max-width: 768px) {
   .banner h1 {
-    font-size: 3vw; /* You can adjust the relative font size as needed */
+    font-size: 4vw; /* You can adjust the relative font size as needed */
   }
   .banner p {
     font-size: 5vw;
