@@ -3,8 +3,7 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import logo from '../assets/logos/mary-anne-new.jpg';
-import navIcon1 from '../assets/img/nav-icon1.svg';
-import navIcon3 from '../assets/img/nav-icon3.svg';
+
 
 
 function SideNav() {
@@ -39,12 +38,6 @@ function SideNav() {
             <Nav.Link href="/projects">Projects</Nav.Link>
             <Nav.Link href="/contact">Contact</Nav.Link>
           </Nav>
-          {/* <span className="navbar-text">
-            <div className="social-icon">
-                <a href="https://www.linkedin.com/in/maryanne-mwangi-59779a19a/"><img src={navIcon1} alt="" /></a>
-                <a href="https://instagram.com/m_.m_designs_?igshid=NzZIODBkYWE4Ng=="><img src={navIcon3} alt="" /></a>
-            </div>
-          </span> */}
         </Navbar.Collapse>
       </Container>
     </Navbar>
