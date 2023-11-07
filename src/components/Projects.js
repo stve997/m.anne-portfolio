@@ -1,7 +1,7 @@
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
 import poster1 from '../assets/Projects/africuisines.jpg';
-import poster2 from '../assets/Projects/defi0.jpg';
+import poster2 from '../assets/Logos/talanta poster.jpg';
 import poster3 from '../assets/Projects/thank you.png';
 import poster4 from '../assets/Projects/kereita 1.jpg';
 import poster5 from '../assets/Projects/might1.jpg';
