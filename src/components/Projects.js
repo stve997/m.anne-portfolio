@@ -153,7 +153,7 @@ export const Projects = () => {
     {
       title: "Posters",
       description: "",
-      imgUrl: logo22,
+      imgUrl: poster2,
     },
     {
       title: "Posters",

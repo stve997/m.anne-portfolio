@@ -27,7 +27,7 @@ function SideNav() {
 
 
   return (
-    <Navbar expand="lg" variant="dark" className={scrolled ? "scrolled" : ""}>
+    <Navbar expand="lg" variant="dark">
       <Container>
         <Navbar.Brand href="/">
           <img src={logo} alt="Logo" style={{ width: '40px', height: '40px' }} />

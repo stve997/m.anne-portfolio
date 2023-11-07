@@ -95,6 +95,7 @@ nav.navbar {
   top: 0;
   z-index: 9999;
   transition:  0.32s ease-in-out;
+  background-color: #121212;
 }
 nav.navbar.scrolled {
   padding: 0px 0;
@@ -410,7 +411,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   padding: 17px 0;
   color: #fff;
   width: 100%;
-  font-size: 17px;
+  font-size: 14px;
   letter-spacing: 0.8px;
   font-weight: 500;
   position: relative;
